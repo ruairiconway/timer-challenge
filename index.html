@@ -5,17 +5,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Lizards Rule</title>
+        <title>SWC - Awesome Timer</title>
         <!-- CSS -->
         <link href="main.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
+        <main id="js-wrapper" class="timer-wrapper">
+            <h1 id="js-title" class="timer-title">timer</h1>
+            <div id="js-clock" class="timer-clock">
+                <!-- <p>
+                    <span id="js-output-mins" class="timer-output mins"></span>
+                    :
+                    <span id="js-output-secs" class="timer-output secs"></span>
+                </p> -->
+                <form>
+                    <input type="number" id="js-input-mins" class="timer-input mins" min="0" max="59" placeholder="00" onkeypress="return isNumberKey(event)" oninput="checkLength(this)">
+                    <span>:</span>
+                    <input type="number" id="js-input-secs" class="timer-input secs" min="0" max="59" placeholder="00" onkeypress="return isNumberKey(event)" oninput="checkLength(this)">
+                    <button type="submit" id="js-btn" class="timer-btn"></button>
+                </form>
+            </div>
+        </main>
+        <footer>Ruair&iacute; Conway</footer>
 
         <!-- scripts -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
         <script src="main.js"></script>
     </body>
 </html>
