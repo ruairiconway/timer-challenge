@@ -11,20 +11,15 @@
     </head>
     <body>
         <main id="js-wrapper" class="timer-wrapper">
-            <h1 id="js-title" class="timer-title">timer</h1>
-            <div id="js-clock" class="timer-clock">
-                <!-- <p>
-                    <span id="js-output-mins" class="timer-output mins"></span>
+            <h1>Timer</h1>
+            <form>
+                <span id="timer-display">
+                    <select name="mins-input" id="mins"></select>
                     :
-                    <span id="js-output-secs" class="timer-output secs"></span>
-                </p> -->
-                <form>
-                    <input type="number" id="js-input-mins" class="timer-input mins" min="0" max="59" placeholder="00" onkeypress="return isNumberKey(event)" oninput="checkLength(this)">
-                    <span>:</span>
-                    <input type="number" id="js-input-secs" class="timer-input secs" min="0" max="59" placeholder="00" onkeypress="return isNumberKey(event)" oninput="checkLength(this)">
-                    <button type="submit" id="js-btn" class="timer-btn"></button>
-                </form>
-            </div>
+                    <select name="secs-input" id="secs"></select>
+                </span>
+                <button id="timer-btn" type="submit" value="start">start</button>
+            </form>
         </main>
         <footer>Ruair&iacute; Conway</footer>
 
